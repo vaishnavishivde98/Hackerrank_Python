@@ -1,0 +1,7 @@
+n = int(input())
+list_n = set(list(map(int, input().split())))
+b = int(input())
+list_b = set(list(map(int, input().split())))
+
+s = list_n.union(list_b)
+print(len(s))

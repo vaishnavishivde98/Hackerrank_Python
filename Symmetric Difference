@@ -1,0 +1,12 @@
+M = input()
+list_M = set(list(map(int, input().split())))
+N = input()
+list_N = set(list(map(int, input().split())))
+
+diff_M = list_M.difference(list_N)
+diff_N = list_N.difference(list_M)
+
+diff = list(diff_M) + list(diff_N)
+
+for i in sorted(diff):
+    print(i)
